@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆瓣实战</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/豆瓣.css">
+</head>
+<body>
+    <header class="header">
+        <a href="https://www.douban.com/" class="logo">
+            <h1>豆瓣</h1>
+        </a>
+        
+        <div class="headbox">
+            <a href="https://www.douban.com/" class="title">
+                <p>豆瓣网</p>
+            </a>
+            <form class="searchbox">
+                <input type="text" placeholder="书籍、电影、音乐、小组、小站、成员">
+                <button type="submit" value="搜索"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul class="sort clearfix">
+                <li><a href="https://book.douban.com/" style="color: #67513c;">读书</a></li>
+                <li><a href="https://movie.douban.com/" style="color: #278dce;">电影</a></li>
+                <li><a href="https://music.douban.com/" style="color: #f5952b;">音乐</a></li>
+                <li><a href="https://www.douban.com/location/jiangsu/" style="color: #e95a11;">同城</a></li>
+                <li><a href="https://www.douban.com/group/explore" style="color: #53b3b8;">小组</a></li>
+                <li><a href="https://read.douban.com/" style="color: #389eac;">阅读</a></li>
+                <li><a href="https://doubanfm.kuwo.cn/" style="color: #9bd6c5;">FM</a></li>
+                <li><a href="https://m.douban.com/time/" style="color: #5c5c5c;">时间</a></li>
+                <li><a href="https://market.douban.com/" style="color: #44883e;">豆品</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="app-info">
+            <h2>豆瓣 7.0</h2>
+            <a href="#" class="download-btn">下载豆瓣 App</a>
+            <img src="./img/qrcode.png" alt="二维码">
+        </div>
+        <div class="login-section">
+            <div class="login-form">
+                <div class="tab">
+                    <span class="active">短信登录 / 注册</span>
+                    <span>密码登录</span>
+                </div>
+
+                <div class="agreement-checkbox">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">
+                        我已阅读并同意
+                        <a href="#">《用户协议》</a>
+                        和
+                        <a href="#">《隐私政策》</a>
+                    </label>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="+86 手机号">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="验证码">
+                        <button class="get-code">获取验证码</button>
+                    </div>
+                    <button type="submit" class="login-btn">登录豆瓣</button>
+                    <a href="#" class="no-code">收不到验证码</a>
+                </form>
+
+                <div class="third-login">
+                    <span>第三方登录:</span>
+                    <img src="./img/weixin.svg" alt="微信">
+                    <img src="./img/weibo.svg" alt="微博">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div id="text" class="section clearfix">
+        <div class="content">
+            <div class="comment-section">
+                <h2>
+                     精选内容&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;. 
+                    <span>
+                        &nbsp;( 
+                        <a href="https://www.douban.com/group/explore" style="color: #278dce; font-size: 12px;">更多内容</a>
+                         ) 
+                    </span>
+                </h2>
+                <div id="1" class="group-item">
+                    <div class="text clearfix">
+                        <div class="source">来自：豆瓣小组</div>
+                        <div class="meta">
+                            <a href="">
+                                <img src="./img/1.jpg" alt="">
+                            </a>
+                            <a href="">aaa</a>
+                        </div>
+                        <div class="title">
+                            <a href="">高配得感的女生好有魅力啊！！！</a>
+                        </div>
+                        <div class="article">
+                            前段时间去旅游，认识了几个新朋友。旅途中我忍不住把注意力放在其中...
+                        </div>
+                        <div class="meta">
+                            <a href="" style="display: inline-block; color: #999; margin-top: 15px;">
+                                <span>132回应</span>
+                                <span>1755赞</span>
+                                <span>248转发</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="picture clearfix">
+                        <a href="">
+                            <img src="./img/111.jpg" alt="" style="width: 160px; height: 120px;">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="2" class="group-item">
+                    <div class="text clearfix">
+                        <div class="source">来自：豆瓣小组</div>
+                        <div class="meta">
+                            <a href="">
+                                <img src="./img/2.jpg" alt="">
+                            </a>
+                            <a href="">bbb</a>
+                        </div>
+                        <div class="title">
+                            <a href="">会运动的人才是真的会生活</a>
+                        </div>
+                        <div class="article">
+                            前段时间去旅游，认识了几个新朋友。旅途中我忍不住把注意力放在其中...
+                        </div>
+                        <div class="meta">
+                            <a href="" style="color: #999; margin-top: 15px;">
+                                <span>132回应</span>
+                                <span>1755赞</span>
+                                <span>248转发</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
+                
+                <div id="3" class="group-item">
+                    <div class="text clearfix">
+                        <div class="source">来自：豆瓣小组</div>
+                        <div class="meta">
+                            <a href="">
+                                <img src="./img/3.jpg" alt="">
+                            </a>
+                            <a href="">ccc</a>
+                        </div>
+                        <div class="title">
+                            <a href="">养一只小狗需要付出更多的精力</a>
+                        </div>
+                        <div class="article">
+                            前段时间去旅游，我把小狗寄养在朋友家，可是...
+                        </div>
+                        <div class="meta">
+                            <a href="" style="color: #999; margin-top: 15px;">
+                                <span>132回应</span>
+                                <span>1755赞</span>
+                                <span>248转发</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="side">
+                <div class="ad">
+                    <a href="https://read.douban.com/">
+                        <img src="./img/ad.jpg" alt="广告">
+                    </a>
+                </div>
+                <h2>
+                    热门话题&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;. 
+                   <span>
+                       &nbsp;( 
+                       <a href="https://www.douban.com/gallery/" style="color: #278dce; font-size: 12px;">去话题广场</a>
+                        ) 
+                   </span>
+               </h2>
+               <div id="62" class="group-item">
+                    <div class="title">
+                        <a href="">我能把人生过得很好</a>
+                    </div>
+                    <div class="meta">
+                        <a href="" style="display: inline-block; color: #999;">
+                            <span>1755篇内容</span>
+                            &nbsp;·
+                            <span>123万次浏览</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="61" class="group-item">
+                    <div class="title">
+                        <a href="">单身独居是当代年轻人的标配</a>
+                    </div>
+                    <div class="meta">
+                        <a href="" style="display: inline-block; color: #999;">
+                            <span>1755篇内容</span>
+                            &nbsp;·
+                            <span>123万次浏览</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="63" class="group-item">
+                    <div class="title">
+                        <a href="">高能量人格魅力是什么</a>
+                    </div>
+                    <div class="meta">
+                        <a href="" style="display: inline-block; color: #999;">
+                            <span>1755篇内容</span>
+                            &nbsp;·
+                            <span>123万次浏览</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    <div id="group" class="section clearfix">
+        <div class="sort-item group">
+            <div class="sortleft">
+                <h2>
+                    <span>
+                        <a href="https://www.douban.com/group/explore">小组</a>
+                    </span>
+                </h2>
+                <div class="list">
+                    <ul>
+                        <li><a href="">新组</a></li>
+                        <li><a href="">追剧</a></li>
+                        <li><a href="">书影音</a></li>
+                        <li><a href="">人文</a></li>
+                        <li><a href="">美食</a></li>
+                        <li><a href="">家居</a></li>
+                        <li><a href="">体育运动</a></li>
+                        <li><a href="">学习</a></li>
+                        <li><a href="">校园</a></li>
+                        <li><a href="">职场</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sortright"></div>
+            <div class="main">
+                <h2>
+                    热门小组&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;. 
+                   <span>
+                       &nbsp;( 
+                       <a href="https://www.douban.com/group/explore" style="color: #278dce; font-size: 12px;">更多</a>
+                        ) 
+                   </span>
+               </h2>
+               <div class="piclist clearfix">
+                    <ul>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="">
+                                    <img src="./img/3.jpg" alt="">
+                                </a>
+                            </div>
+                           <div class="info">
+                                <div class="title">
+                                    <a href="">宠物</a>
+                                </div>
+                                4231个成员
+                           </div>
+                        </li>
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="movie" class="section clearfix">
+        <div class="sort-item movie">
+            <div class="sortleft">
+                <h2>
+                    <span>
+                        <a href="https://movie.douban.com/">电影</a>
+                    </span>
+                </h2>
+                <div class="list">
+                    <ul>
+                        <li><a href="">影讯&购票</a></li>
+                        <li><a href="">选电影</a></li>
+                        <li><a href="">电视剧</a></li>
+                        <li><a href="">排行榜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sortright clearfix">
+                <h2>
+                    近期热门&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;. 
+                   <span>
+                       &nbsp;( 
+                       <a href="https://www.douban.com/group/explore" style="color: #278dce; font-size: 12px;">更多</a>
+                        ) 
+                   </span>
+               </h2>
+               <div class="list">
+                    <ur>
+                        <li><a href="">阿诺拉</a></li>
+                        <li><a href="">某种物质</a></li>
+                        <li><a href="">魔戒</a></li>
+                        <li><a href="">无名小辈</a></li>
+                        <li><a href="">泳池</a></li>
+                        <li><a href="">黑修女们</a></li>
+                        <li><a href="">勇者之心</a></li>
+                        <li><a href="">秘密会议</a></li>
+                        <li><a href="">隔壁房间</a></li>
+                        <li><a href="">最后赢家</a></li>
+                    </ur>
+               </div>
+
+            </div>
+            <div class="main">
+                <h2>
+                    正在热映&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;. 
+                   <span>
+                       &nbsp;( 
+                       <a href="https://www.douban.com/group/explore" style="color: #278dce; font-size: 12px;">更多</a>
+                        ) 
+                   </span>
+               </h2>
+               <div class="piclist clearfix">
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">9.4</div>
+                        <button type="buy" class="buy-btn">选座购票</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">9.4</div>
+                        <button type="buy" class="buy-btn">选座购票</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">9.4</div>
+                        <button type="buy" class="buy-btn">选座购票</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">9.4</div>
+                        <button type="buy" class="buy-btn">选座购票</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">9.4</div>
+                        <button type="buy" class="buy-btn">选座购票</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">9.4</div>
+                        <button type="buy" class="buy-btn">选座购票</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">9.4</div>
+                        <button type="buy" class="buy-btn">选座购票</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">9.4</div>
+                        <button type="buy" class="buy-btn">选座购票</button>
+                    </div>
+               </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="book" class="section clearfix">
+        <div class="sort-item book">
+            <div class="sortleft">
+                <h2>
+                    <span>
+                        <a href="https://book.douban.com/">读书</a>
+                    </span>
+                </h2>
+                <div class="list">
+                    <ul>
+                        <li><a href="">热门读书榜</a></li>
+                        <li><a href="">读书专题</a></li>
+                        <li><a href="">直播活动</a></li>
+                        <li><a href="">名家问答</a></li>
+                        <li><a href="">共读交流</a></li>
+                        <li><a href="">荐书团</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sortright clearfix">
+                <h2>
+                    热门标签&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;. 
+                   <span>
+                       &nbsp;( 
+                       <a href="https://www.douban.com/group/explore" style="color: #278dce; font-size: 12px;">更多</a>
+                        ) 
+                   </span>
+               </h2>
+               <div class="choose-area">
+                <div class="choose-item clearfix no-line">
+                    <div class="right">
+                        <ul>
+                            <li><a href="" class="cate">[文学]</a></li>
+                            <li><a href="">小说</a></li>
+                            <li><a href="">随笔</a></li>
+                            <li><a href="">散文</a></li>
+                            <li><a href="">诗歌</a></li>
+                            <li><a href="">童话</a></li>
+                            <li><a href="">名著</a></li>
+                            <li><a href="">文言文</a></li>
+                            <li><a href="">更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="choose-item clearfix">
+                    <div class="right">
+                        <ul>
+                            <li><a href="" class="cate">[流行]</a></li>
+                            <li><a href="">漫画</a></li>
+                            <li><a href="">推理</a></li>
+                            <li><a href="">绘本</a></li>
+                            <li><a href="">科幻</a></li>
+                            <li><a href="">青春</a></li>
+                            <li><a href="">言情</a></li>
+                            <li><a href="">奇幻</a></li>
+                            <li><a href="">武侠</a></li>
+                            <li><a href="">更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="choose-item clearfix">
+                    <div class="right">
+                        <ul>
+                            <li><a href="" class="cate">[文化]</a></li>
+                            <li><a href="">历史</a></li>
+                            <li><a href="">哲学</a></li>
+                            <li><a href="">传记</a></li>
+                            <li><a href="">设计</a></li>
+                            <li><a href="">电影</a></li>
+                            <li><a href="">建筑</a></li>
+                            <li><a href="">回忆录</a></li>
+                            <li><a href="">音乐</a></li>
+                            <li><a href="">美术</a></li>
+                            <li><a href="">更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <div class="main">
+                <h2>
+                    新书速递&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;. 
+                   <span>
+                       &nbsp;( 
+                       <a href="https://www.douban.com/group/explore" style="color: #278dce; font-size: 12px;">更多</a>
+                        ) 
+                   </span>
+               </h2>
+               <div class="piclist clearfix">
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">萝莉兔</a></div>
+                        <div class="score">[波兰]乔治·约翰</div>
+                        <button type="buy" class="buy-btn">免费试读</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">萝莉兔</a></div>
+                        <div class="score">[波兰]乔治·约翰</div>
+                        <button type="buy" class="buy-btn">免费试读</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">萝莉兔</a></div>
+                        <div class="score">[波兰]乔治·约翰</div>
+                        <button type="buy" class="buy-btn">免费试读</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">萝莉兔</a></div>
+                        <div class="score">[波兰]乔治·约翰</div>
+                        <button type="buy" class="buy-btn">免费试读</button>
+                    </div>
+               </div>
+
+               <h2>
+                    原创作品&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;. 
+                    <span>
+                        &nbsp;( 
+                        <a href="https://www.douban.com/group/explore" style="color: #278dce; font-size: 12px;">更多</a>
+                        ) 
+                    </span>
+                </h2>
+                <div class="piclist clearfix">
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">48.9元</div>
+                        <button type="buy" class="buy-btn">免费试读</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">48.9元</div>
+                        <button type="buy" class="buy-btn">免费试读</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">48.9元</div>
+                        <button type="buy" class="buy-btn">免费试读</button>
+                    </div>
+                    <div class="movie-item">
+                        <div class="poster"><a href=""><img src="./img/movie.jpg" alt=""></a></div>
+                        <div class="name"><a href="">流浪地球</a></div>
+                        <div class="score">48.9元</div>
+                        <button type="buy" class="buy-btn">免费试读</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
